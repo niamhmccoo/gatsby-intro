@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Global, css } from '@emotion/react';
-import Header from './header';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const Layout = ({ children }) => {
@@ -23,7 +22,6 @@ const Layout = ({ children }) => {
           html,
           body {
             margin: 0 auto;
-            max-width: 1200px;
             color: #555;
             font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
               Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
@@ -71,7 +69,6 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <meta name={description} content="site description" />
       </Helmet>
-      <Header />
       <main>{children}</main>
     </>
   );

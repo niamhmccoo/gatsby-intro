@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 
 const StyledHeader = styled.header`
   display: flex;
+  max-width: 1200px;
   flex-flow: row nowrap;
   justify-content: space-between;
 `;
